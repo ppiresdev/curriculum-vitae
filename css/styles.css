@@ -178,3 +178,17 @@ body {
 .redes-sociais ul li a i:hover {
   color: var(--branco);
 }
+
+/*Estilização da página conhecimentos.html*/
+
+.conhecimentos {
+  margin-top: 3em;
+  margin-left: 2em;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.conhecimentos ol {
+  list-style-type: lower-alpha;
+}
+/*Estilização da página objetivos.html*/
