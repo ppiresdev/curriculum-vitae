@@ -191,4 +191,19 @@ body {
 .conhecimentos ol {
   list-style-type: lower-alpha;
 }
+
 /*Estilização da página objetivos.html*/
+.objetivos {
+  margin-top: 3em;
+}
+
+.objetivos ul {
+  list-style: none;
+}
+
+.objetivos ul li {
+  margin-top: 2em;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: justify;
+}
