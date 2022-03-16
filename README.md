@@ -4,10 +4,10 @@
 
 ### Abaixo estão algumas telas do projeto:
 
-![Tela 1](./images/1-pagina-principal.png)
+![Tela 1](./images/1-1-pagina-principal.png)
 
 ![Tela 2](./images/2-pagina-conhecimentos.png)
 
 ![Tela 3](./images/3-pagina-objetivos.png)
 
-![Tela 4](./images/4-Layout-responsivo.png)
+![Tela 4](./images/4-1-Layout-responsivo.png)
