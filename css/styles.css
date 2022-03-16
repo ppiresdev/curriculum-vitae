@@ -28,14 +28,16 @@ body {
 }
 
 .container-principal {
-  display: flex;
-  flex-direction: row;
+  position: relative;
   width: 100%;
-  max-width: 1400px;
-  min-width: 960px;
+  max-width: 1200px;
   min-height: 900px;
   margin: 40px;
   background-color: var(--cinza-fumaca);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /*Duas colunas, sendo a segunda coluna o dobro da outra. FR é uma unidade fracional. O tamanho do conteúdo é respeitado, 
+  ou seja, se o conteúdo na primeira coluna for maior que o da segunda, a primeira será maior.*/
   box-shadow: 0 35px 50px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,14 +45,12 @@ body {
   position: relative;
   background-color: var(--cinza-escuro);
   padding: 40px;
-  width: 25%;
 }
 
 .coluna-direita {
-  /* position: relative; */
+  position: relative;
   background-color: var(--cinza-escuro-light);
   padding: 40px;
-  width: 75%;
 }
 
 .texto-perfil {
@@ -206,4 +206,50 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   text-align: justify;
+}
+
+.coluna-direita .objetivos .span-altera-cor {
+  color: var(--branco);
+}
+
+/*Media Queries*/
+@media (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+  .container-principal {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .coluna-direita .dados {
+    margin-top: 1em;
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    padding: 10px;
+  }
+
+  .texto-perfil {
+    padding-bottom: 10px;
+  }
+
+  .coluna-esquerda .texto-perfil .img-box {
+    width: 150px;
+    height: 150px;
+    margin-top: 1em;
+  }
+
+  .menu {
+    margin-top: 1em;
+  }
+
+  .conhecimentos {
+    margin-top: 1em;
+  }
+
+  .objetivos {
+    margin-top: 1em;
+  }
 }
